@@ -1,0 +1,37 @@
+{
+  "name": "generator-browserify",
+  "description": "A Yeoman generator to generate an NPM module that uses Browserify",
+  "version": "1.0.0",
+  "Author": "Chad Engler <chad@pantherdev.com>",
+  "LICENSE": "ISC",
+  "main": "app/index.js",
+  "keywords": [
+    "yeoman",
+    "generator",
+    "gulp",
+    "browserify"
+  ],
+  "homepage": "https://github.com/englercj/generator-browserify",
+  "bugs": "https://github.com/stbaer/generator-browserify/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stbaer/generator-browserify.git"
+  },
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "dependencies": {
+    "yeoman-generator": "^0.20.1",
+    "chalk": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  }
+}
