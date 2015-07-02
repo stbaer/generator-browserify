@@ -6,7 +6,7 @@ Based on [englercj/generator-browserify](https://github.com/englercj/generator-b
 ## Usage
 
 ```bash
-npm install -g yo englercj/generator-browserify
+npm install -g yo stbaer/generator-browserify
 
 yo browserify
 ```
