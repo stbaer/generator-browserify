@@ -4,7 +4,7 @@
   "main": "./src/index.js",
   "description": "<%= config.description %>",
   "author": "<%= config.userName %> <<%= config.userEmail %>>",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "<%= config.gitUrl %>",
   "repository": {
     "type": "git",

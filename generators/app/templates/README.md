@@ -16,3 +16,8 @@ That will output the built distributables to `./dist`.
 
 [node]:       http://nodejs.org/
 [gulp]:       http://gulpjs.com/
+
+
+## Licence
+
+MIT
