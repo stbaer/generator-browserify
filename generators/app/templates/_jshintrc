@@ -27,9 +27,8 @@
     "plusplus"      : false,    // Disallow use of `++` & `--`.
     "quotmark"      : true,     // Force consistency when using quote marks.
     "undef"         : true,     // Require all non-global variables be declared before they are used.
-    "unused"        : true,     // Warn when varaibles are created but not used.
+    "unused"        : "vars",     // Warn when varaibles are created but not used.
     "strict"        : false,    // Require `use strict` pragma in every file.
-    "trailing"      : true,     // Prohibit trailing whitespaces.
     "maxparams"     : 7,        // Prohibit having more than X number of params in a function.
     "maxdepth"      : 6,        // Prohibit nested blocks from going more than X levels deep.
     "maxstatements" : false,    // Restrict the number of statements in a function.
@@ -62,7 +61,6 @@
     "multistr"      : false,    // Tolerate multi-line strings.
     "proto"         : false,    // Tolerate __proto__ property. This property is deprecated.
     "scripturl"     : false,    // Tolerate script-targeted URLs.
-    "smarttabs"     : false,    // Tolerate mixed tabs and spaces when the latter are used for alignmnent only.
     "shadow"        : false,    // Allows re-define variables later in code e.g. `var x=1; x=2;`.
     "sub"           : false,    // Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`.
     "supernew"      : false,    // Tolerate `new function () { ... };` and `new Object;`.

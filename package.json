@@ -1,9 +1,9 @@
 {
   "name": "generator-browserify",
   "description": "A Yeoman generator to generate an NPM module that uses Browserify",
-  "version": "1.0.0",
-  "Author": "Chad Engler <chad@pantherdev.com>",
-  "LICENSE": "ISC",
+  "version": "1.0.1",
+  "Author": "Steffen Bär",
+  "LICENSE": "MIT",
   "main": "app/index.js",
   "keywords": [
     "yeoman",
@@ -11,7 +11,7 @@
     "gulp",
     "browserify"
   ],
-  "homepage": "https://github.com/englercj/generator-browserify",
+  "homepage": "https://github.com/stbaer/generator-browserify",
   "bugs": "https://github.com/stbaer/generator-browserify/issues",
   "repository": {
     "type": "git",

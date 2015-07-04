@@ -22,7 +22,6 @@ describe('browserify module generator', function () {
             'gulpfile.js',
             'package.json',
             'README.md',
-            'CONTRIBUTING.md',
             'LICENSE',
             // gulp files
             'gulp/tasks/build.js',
