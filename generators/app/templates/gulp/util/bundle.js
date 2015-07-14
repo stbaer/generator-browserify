@@ -13,7 +13,7 @@ function rebundle() {
     return this.bundle()
         .on('error', handleErrors.handler)
         .pipe(handleErrors())
-        .pipe(source('<%= _.slugify(config.projectName) %>.js'))
+        .pipe(source('<%= config.projectName %>.js'))
         .pipe(gulp.dest(paths.out))
         .pipe(buffer())
         .pipe(uglify())
@@ -24,7 +24,7 @@ function rebundle() {
 function createBundler(args) {
     args = args || {};
     args.debug = true;
-    // args.standalone = '<%= _.slugify(config.projectName) %>';
+    // args.standalone = '<%= config.projectName %>';
 
     return browserify(paths.jsEntry, args);
 }
