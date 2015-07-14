@@ -56,7 +56,6 @@ module.exports = generators.Base.extend({
         this.copy('gulpfile.js', 'gulpfile.js');
         this.template('package.json', 'package.json');
         this.template('README.md', 'README.md');
-        this.template('CONTRIBUTING.md', 'CONTRIBUTING.md');
         this.template('LICENSE', 'LICENSE');
 
         // gulp directory
