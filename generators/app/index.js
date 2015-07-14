@@ -1,5 +1,6 @@
 var generators = require('yeoman-generator'),
-    chalk = require('chalk');
+    chalk = require('chalk'),
+    _s = require('underscore.string');
 
 module.exports = generators.Base.extend({
     initializing: function () {

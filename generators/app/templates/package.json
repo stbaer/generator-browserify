@@ -1,5 +1,5 @@
 {
-  "name": "<%= _.slugify(config.projectName) %>",
+  "name": "<%= _s.slugify(config.projectName) %>",
   "version": "1.0.0",
   "main": "./src/index.js",
   "description": "<%= config.description %>",
