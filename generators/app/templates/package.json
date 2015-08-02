@@ -1,45 +1,29 @@
 {
   "name": "<%= config.projectName %>",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "./src/index.js",
   "description": "<%= config.description %>",
   "author": "<%= config.userName %> <<%= config.userEmail %>>",
   "license": "MIT",
-  "homepage": "<%= config.gitUrl %>",
-  "repository": {
-    "type": "git",
-    "url": "<%= config.gitUrl + '.git' %>"
-  },
-  "bugs": {
-    "url": "<%= config.gitUrl + '/issues' %>"
-  },
+  "homepage": "https://github.com/<%= config.userName %>/<%= config.projectName %>",
+  "repository": "<%= config.userName/config.projectName %>",
   "keywords": [],
   "scripts": {
-    "test": "gulp test",
-    "build": "gulp build",
-    "docs": "./node_modules/.bin/jsdoc -c ./gulp/util/jsdoc.conf.json"
+    "test": "browserify test/unit/*.js | browser-run | faucet",
+    "show-gzipped-minjs-size": "echo \"js minified and gzipped: \" && gzip -c build/<%= config.projectName %>.min.js | wc -c",
+    "bundle": "browserify src/index.js -s <%= config.projectName %> -o build/<%= config.projectName %>.js",
+    "uglify:dist": "uglifyjs --screw-ie8 --stats -vcm build/<%= config.projectName %>.js > build/<%= config.projectName %>.min.js",
+    "uglify": "npm run uglify:dist",
+    "build": "npm run bundle && npm run uglify && npm run show-gzipped-minjs-size"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "browserify": "^10.2.4",
-    "chai": "^3.0.0",
-    "del": "^1.2.0",
-    "gulp": "^3.9.0",
-    "gulp-cached": "^1.1.0",
-    "gulp-jshint": "^1.11.2",
-    "gulp-mocha": "^2.1.2",
-    "gulp-plumber": "^1.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.2.0",
-    "gulp-util": "^3.0.6",
-    "ink-docstrap": "^0.5.2",
-    "jsdoc": "^3.3.2",
-    "jshint-summary": "^0.4.0",
-    "require-dir": "^0.3.0",
-    "run-sequence": "^1.1.1",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.2.3"
+    "browser-run": "^2.1.0",
+    "faucet": "latest",
+    "browserify": "^11.0.1",
+    "tape": "^4.0.1",
+    "testling": "^1.7.1",
+    "uglifyjs": "latest",
+    "watchify": "^3.3.1"
   }
 }

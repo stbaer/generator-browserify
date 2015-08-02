@@ -1,6 +1,14 @@
 # <%= config.projectName %>
 
-<%= config.description %>
+[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+
+> <%= config.description %>
+
+## Usage
+
+`npm i <%= config.projectName %>`
+
+[![NPM](https://nodei.co/npm/<%= config.projectName %>.png)](https://www.npmjs.com/package/<%= config.projectName %>)
 
 ## Building
 
@@ -20,4 +28,4 @@ That will output the built distributables to `./dist`.
 
 ## Licence
 
-MIT
+MIT, see [LICENSE.md](http://github.com/<%= config.userName %>/<%= config.projectName %>/blob/master/LICENSE.md) for details.

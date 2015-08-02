@@ -19,22 +19,9 @@ describe('browserify module generator', function () {
             '.editorconfig',
             '.gitignore',
             '.jshintrc',
-            'gulpfile.js',
             'package.json',
             'README.md',
             'LICENSE',
-            // gulp files
-            'gulp/tasks/build.js',
-            'gulp/tasks/clean.js',
-            'gulp/tasks/dev.js',
-            'gulp/tasks/jsdoc.js',
-            'gulp/tasks/jshint.js',
-            'gulp/tasks/scripts.js',
-            'gulp/tasks/test.js',
-            'gulp/tasks/watch.js',
-            'gulp/util/bundle.js',
-            'gulp/util/handleErrors.js',
-            'gulp/util/jsdoc.conf.json',
             // src files
             'src/index.js',
             // test files

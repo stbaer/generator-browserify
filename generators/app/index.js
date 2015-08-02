@@ -20,7 +20,7 @@ module.exports = generators.Base.extend({
             {
                 type: 'input',
                 name: 'userName',
-                message: 'Author\'s name'
+                message: 'Github user name'
             },
             {
                 type: 'input',
@@ -31,11 +31,6 @@ module.exports = generators.Base.extend({
                 type: 'input',
                 name: 'description',
                 message: 'Description of the project'
-            },
-            {
-                type: 'input',
-                name: 'gitUrl',
-                message: 'GitHub page url'
             }
         ];
 
@@ -53,13 +48,9 @@ module.exports = generators.Base.extend({
         this.copy('_jshintrc', '.jshintrc');
 
         // root files
-        this.copy('gulpfile.js', 'gulpfile.js');
         this.template('package.json', 'package.json');
         this.template('README.md', 'README.md');
         this.template('LICENSE', 'LICENSE');
-
-        // gulp directory
-        this.directory('gulp');
 
         // src files
         this.directory('src');
